@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Wed Nov 25 2015 20:06:37 GMT+0530 (India Standard Time) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="Servers">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="Server" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element minOccurs="1" name="ComputerName" type="xs:string"></xs:element>
+                                             <xs:element minOccurs="1" name="Cluster" type="xs:string"></xs:element>
+                                             <xs:element minOccurs="1" name="ClusterNode" type="xs:string"></xs:element>
+                                             <xs:element minOccurs="1" name="SqlInstance" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="id" type="xs:int"></xs:attribute>
+                                       <xs:attribute name="ClusterName" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>

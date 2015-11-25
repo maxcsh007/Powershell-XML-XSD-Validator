@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Servers.xsd">
+   <Server id="1" ClusterName="Specify Cluster Name!">
+	  <ComputerName>SQL-Server1</ComputerName> <!-- Leave the feild empty if not required -->
+      <Cluster>SQLCluster</Cluster>
+      <ClusterNode>Yes</ClusterNode>
+	  <SqlInstance>MySQL</SqlInstance>
+   </Server>
+   <Server id="2">
+	  <ComputerName>SQL-Server2</ComputerName>
+      <Cluster>SQLCluster</Cluster>	  
+      <ClusterNode></ClusterNode>
+	  <SqlInstance>MySQL</SqlInstance>	
+	</Server>  
+</Servers>   
